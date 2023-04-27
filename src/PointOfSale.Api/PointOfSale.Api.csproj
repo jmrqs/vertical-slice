@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>ad56dc7d-e38d-4fab-9c0a-40c7ee1a49b8</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\PointOfSale.BuildingBlocks\PointOfSale.BuildingBlocks.csproj" />
+    <ProjectReference Include="..\PointOfSale.App\PointOfSale.App.csproj" />
+    <ProjectReference Include="..\PointOfSale.Infra\PointOfSale.Infra.csproj" />
+  </ItemGroup>
+
+</Project>

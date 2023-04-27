@@ -1,0 +1,87 @@
+﻿using MediatR;
+
+namespace PointOfSale.BuildingBlocks.MediatR;
+
+public interface ICommand<out T> : IRequest<T> where T : notnull
+{
+}
+
+public interface ICommand : IRequest
+{
+}
+
+public interface IQuery<out T> : IRequest<T>
+    where T : notnull
+{
+}
+
+public interface ICreateCommand<out TResponse> : ICommand<TResponse>
+    where TResponse : notnull
+{
+}
+
+public interface ICreateCommand : ICommand
+{
+}
+
+public interface IUpdateCommand : ICommand
+{
+}
+
+public interface IUpdateCommand<out TResponse> : ICommand<TResponse>
+    where TResponse : notnull
+{
+}
+
+public interface IDeleteCommand<TId, out TResponse> : ICommand<TResponse>
+    where TId : struct
+    where TResponse : notnull
+{
+    public TId Id { get; init; }
+}
+
+public interface IDeleteCommand<TId> : ICommand where TId : struct
+{
+    public TId Id { get; init; }
+}
+
+public interface IPageList
+{
+    public List<string> Includes { get; init; }
+    public List<FilterModel> Filters { get; init; }
+    public List<string> Sorts { get; init; }
+    public int Page { get; init; }
+    public int PageSize { get; init; }
+}
+
+public interface IListQuery<out TResponse> : IQuery<TResponse>, IPageList
+    where TResponse : notnull
+{
+}
+
+public interface IItemQuery<TId, out TResponse> : IQuery<TResponse>
+    where TId : struct
+    where TResponse : notnull
+{
+    public List<string> Includes { get; }
+    public TId Id { get; }
+}
+
+public record FilterModel(string FieldName, string Comparision, string FieldValue);
+
+public record ListResultModel<T>(List<T> Items, long TotalItems, int Page, int PageSize)
+{
+    public static ListResultModel<T> Empty => new(Enumerable.Empty<T>().ToList(), 0, 0, 0);
+
+    public static ListResultModel<T> Create(List<T> items, long totalItems = 0, int page = default,
+        int pageSize = 20)
+    {
+        return new ListResultModel<T>(items, totalItems, page, pageSize);
+    }
+
+    public ListResultModel<U> Map<U>(Func<T, U> map)
+    {
+        return ListResultModel<U>.Create(
+            Items.Select(map).ToList(), TotalItems, Page, PageSize);
+    }
+}

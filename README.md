@@ -1,1 +1,1 @@
-# clean-code
+# vertical-slice
