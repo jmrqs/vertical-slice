@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using PointOfSale.BuildingBlocks.WebApi;
+using PointOfSale.Infra;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.AddInfrastructure();
 
 builder.Services.AddControllers(options =>
     options.Conventions.Add(new RouteTokenTransformerConvention(new SlugApiParameters())));

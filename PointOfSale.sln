@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSale.BuildingBlocks", "src\PointOfSale.BuildingBlocks\PointOfSale.BuildingBlocks.csproj", "{C5C423A6-BE1C-4047-875D-4B6D5ADAC77D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSale.Web", "src\PointOfSale.Web\PointOfSale.Web.csproj", "{27321064-2733-45E5-A387-03FCEEA28666}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{C5C423A6-BE1C-4047-875D-4B6D5ADAC77D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5C423A6-BE1C-4047-875D-4B6D5ADAC77D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5C423A6-BE1C-4047-875D-4B6D5ADAC77D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27321064-2733-45E5-A387-03FCEEA28666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27321064-2733-45E5-A387-03FCEEA28666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27321064-2733-45E5-A387-03FCEEA28666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27321064-2733-45E5-A387-03FCEEA28666}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{5C0A831C-443C-4EAF-8AD5-0D92471690A8} = {393766CB-C435-42B0-A161-1B2DBCA6CA68}
 		{38BC2DDE-65CE-4327-A213-F6FB139D0F4F} = {393766CB-C435-42B0-A161-1B2DBCA6CA68}
 		{C5C423A6-BE1C-4047-875D-4B6D5ADAC77D} = {07CDD21A-C98E-4C33-AACF-0C961FCCA697}
+		{27321064-2733-45E5-A387-03FCEEA28666} = {393766CB-C435-42B0-A161-1B2DBCA6CA68}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E64024C7-F536-4336-A423-735B5109E0D1}

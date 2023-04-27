@@ -7,5 +7,4 @@ namespace PointOfSale.Api.Controllers;
 [Route("api/[controller]")]
 public class TableController : ApiControllerBase
 {
-    
 }
