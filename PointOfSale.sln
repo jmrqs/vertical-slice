@@ -16,9 +16,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSale.Infra", "src\PointOfSale.Infra\PointOfSale.Infra.csproj", "{38BC2DDE-65CE-4327-A213-F6FB139D0F4F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FECDB56E-FE5E-4959-980E-DB24D07BCCE2}"
-	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PointOfSale.BuildingBlocks", "src\PointOfSale.BuildingBlocks\PointOfSale.BuildingBlocks.csproj", "{C5C423A6-BE1C-4047-875D-4B6D5ADAC77D}"
 EndProject
