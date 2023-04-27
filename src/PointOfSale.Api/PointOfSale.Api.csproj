@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\PointOfSale.BuildingBlocks\PointOfSale.BuildingBlocks.csproj" />
     <ProjectReference Include="..\PointOfSale.App\PointOfSale.App.csproj" />
+    <ProjectReference Include="..\PointOfSale.BuildingBlocks\PointOfSale.BuildingBlocks.csproj" />
     <ProjectReference Include="..\PointOfSale.Infra\PointOfSale.Infra.csproj" />
   </ItemGroup>
 
