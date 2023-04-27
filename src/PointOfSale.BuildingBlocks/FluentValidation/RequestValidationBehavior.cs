@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace PointOfSale.BuildingBlocks.FluentValidation;
 
@@ -27,7 +28,7 @@ public class RequestValidationBehavior<TRequest, TResponse> : IPipelineBehavior<
         var validationResult = await _validator.ValidateAsync(request, cancellationToken);
         
         if (!validationResult.IsValid)
-            throw new Exception("Validation failed.");
+            throw new ValidationException("Validation failed.");
 
         var response = await next();
 

@@ -1,6 +1,6 @@
-﻿namespace PointOfSale.Core.Companies;
+﻿namespace PointOfSale.Core.Models.CompanyInfo;
 
-public class Company
+public class CompanyInfoModel
 {
     public int Id { get; init; }
     public string? Name { get; init; }

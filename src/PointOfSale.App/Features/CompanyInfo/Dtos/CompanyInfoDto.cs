@@ -1,8 +1,6 @@
-﻿using PointOfSale.Core.Companies;
+﻿namespace PointOfSale.App.Features.CompanyInfo.Dtos;
 
-namespace PointOfSale.App.Dtos;
-
-public class CompanyDto
+public class CompanyInfoDto
 {
     public int Id { get; init; }
     public string? Name { get; init; }

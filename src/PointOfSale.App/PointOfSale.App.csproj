@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Companies\FindCompanyByIdInRedis\" />
-    <Folder Include="Tables\" />
+    <Folder Include="Features\CompanyInfo\FindCompanyInfoByIdInRedis\" />
   </ItemGroup>
 
   <ItemGroup>

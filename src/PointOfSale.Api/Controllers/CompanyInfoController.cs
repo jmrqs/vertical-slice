@@ -1,18 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
-using PointOfSale.App.Features.Companies.FindCompanyByIdInMemoryCache;
+using PointOfSale.App.Features.CompanyInfo.FindCompanyInfoByIdInMemoryCache;
 using PointOfSale.BuildingBlocks.WebApi;
 
 namespace PointOfSale.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class CompaniesController : ApiControllerBase
+public class CompanyInfoController : ApiControllerBase
 {
     [HttpGet("{id:int}/memory-cache")]
-    public async Task<ActionResult> FindCompanyByIdInMemoryCacheAsync([FromRoute] int id,
+    public async Task<ActionResult> FindCompanyInfoByIdInMemoryCacheAsync([FromRoute] int id,
         CancellationToken cancellationToken = default)
     {
-        var query = new FindCompanyByIdInMemoryCacheQuery(id);
+        var query = new FindCompanyInfoByIdInMemoryCacheQuery(id);
 
         var result = await Mediator.Send(query, cancellationToken);
         return Ok(result);
