@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using PointOfSale.App.Features.CompanyInfo.FindCompanyInfoByIdInMemoryCache;
+using PointOfSale.App.Features.Companies.FindCompanyInfoByIdInMemoryCache;
 using PointOfSale.BuildingBlocks.WebApi;
 
 namespace PointOfSale.Api.Controllers;

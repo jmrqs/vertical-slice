@@ -1,15 +1,16 @@
-﻿using AutoMapper;
+﻿using MapsterMapper;
 using MediatR;
-using PointOfSale.App.Features.CompanyInfo.Dtos;
-using PointOfSale.App.Features.CompanyInfo.Exceptions;
-using PointOfSale.App.Features.CompanyInfo.Interfaces;
+using PointOfSale.App.Features.Companies.Dtos;
+using PointOfSale.App.Features.Companies.Exceptions;
+using PointOfSale.App.Features.Companies.Interfaces;
 
-namespace PointOfSale.App.Features.CompanyInfo.FindCompanyInfoByIdInMemoryCache;
+namespace PointOfSale.App.Features.Companies.FindCompanyInfoByIdInMemoryCache;
 
 public class FindCompanyInfoByIdInMemoryCacheHandler : IRequestHandler<FindCompanyInfoByIdInMemoryCacheQuery, FindCompanyInfoByIdInMemoryCacheResult>
 {
-    private readonly IMapper _mapper;
     private readonly ICompanyInfoService _service;
+    private readonly IMapper _mapper;
+
 
     public FindCompanyInfoByIdInMemoryCacheHandler(ICompanyInfoService service, IMapper mapper)
     {

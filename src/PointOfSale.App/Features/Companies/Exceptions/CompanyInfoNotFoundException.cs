@@ -1,6 +1,6 @@
 ﻿using PointOfSale.BuildingBlocks.Exception;
 
-namespace PointOfSale.App.Features.CompanyInfo.Exceptions;
+namespace PointOfSale.App.Features.Companies.Exceptions;
 
 public class CompanyInfoNotFoundException : NotFoundException
 {

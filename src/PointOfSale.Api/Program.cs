@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
+using PointOfSale.App;
 using PointOfSale.BuildingBlocks.WebApi;
 using PointOfSale.Infra;
 

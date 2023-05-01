@@ -1,6 +1,6 @@
-﻿namespace PointOfSale.App.Features.CompanyInfo.Dtos;
+﻿namespace PointOfSale.Core.Companies.Models;
 
-public class CompanyInfoDto
+public class CompanyInfo
 {
     public int Id { get; init; }
     public string? Name { get; init; }

@@ -1,13 +1,13 @@
-﻿using PointOfSale.App.Features.CompanyInfo.Interfaces;
-using PointOfSale.Core.Models.CompanyInfo;
+﻿using PointOfSale.App.Features.Companies.Interfaces;
+using PointOfSale.Core.Companies.Models;
 
 namespace PointOfSale.Infra.Services
 {
-    internal class CompanyInfoService : ICompanyInfoService
+    public class CompanyInfoService : ICompanyInfoService
     {
-        public Task<CompanyInfoModel> FindCompanyInfoByIdAsync(int companyId, CancellationToken cancellationToken = default)
+        public Task<CompanyInfo> FindCompanyInfoByIdAsync(int companyId, CancellationToken cancellationToken = default)
         {
-            return Task.FromResult(new CompanyInfoModel() { Id = 1, Name =  "Company Name" }); // TODO: Database integration
+            return Task.FromResult(new CompanyInfo() { Id = 1, Name =  "Company Name" });
         }
     }
 }

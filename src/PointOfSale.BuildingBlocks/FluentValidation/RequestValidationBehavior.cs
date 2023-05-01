@@ -1,7 +1,6 @@
 ﻿using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 
 namespace PointOfSale.BuildingBlocks.FluentValidation;
 

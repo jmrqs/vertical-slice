@@ -1,6 +1,6 @@
 ﻿using PointOfSale.BuildingBlocks.MediatR;
 
-namespace PointOfSale.App.Features.CompanyInfo.FindCompanyInfoByIdInMemoryCache;
+namespace PointOfSale.App.Features.Companies.FindCompanyInfoByIdInMemoryCache;
 
 public class FindCompanyInfoByIdInMemoryCacheQuery : IQuery<FindCompanyInfoByIdInMemoryCacheResult>
 {
