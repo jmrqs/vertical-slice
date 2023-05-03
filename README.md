@@ -1,6 +1,18 @@
 # Notes
 
-## .NET 6
+## Technologies
+
+- [x] .NET 6 https://github.com/dotnet/core
+- [x] MediatR https://github.com/jbogard/MediatR
+- [x] FluentValidation https://github.com/FluentValidation
+- [x] Mapster https://github.com/MapsterMapper
+- [ ] Dapper 
+- [ ] MySQL https://github.com/mysql
+- [ ] MongoDB https://github.com/mongodb/
+- [ ] EasyCaching https://github.com/dotnetcore/EasyCaching
+- [ ] Redis https://github.com/redis/
+
+### .NET 6
 
 **Reference:** https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-6
 
