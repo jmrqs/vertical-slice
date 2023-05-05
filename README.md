@@ -1,4 +1,6 @@
-# What is covered in the code?
+# Point Of Sale
+
+## What is covered in the code?
 
 - [x] [Vertical Slice](https://jimmybogard.com/vertical-slice-architecture)
 - [ ] [Globalization and localization](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-6.0)
@@ -15,9 +17,11 @@
 - [ ] [HotChocolate](https://github.com/ChilliCream/graphql-platform)
 - [ ] [Polly](https://github.com/App-vNext/Polly)
 
-# Credits
+## Credits
 
 Inspired by:
 
-[Movie Search Application](https://github.com/mehdihadeli/movie-search-application) by Mehdi Hadeli
-[Booking Modular Monolith](https://github.com/meysamhadeli/booking-modular-monolith) by Meysam Hadeli
+| Project                                                                           |Author        |
+| --------                                                                          | --------     |
+|[Movie Search Application](https://github.com/mehdihadeli/movie-search-application)|Mehdi Hadeli  |
+|[Booking Modular Monolith](https://github.com/meysamhadeli/booking-modular-monolith)|Meysam Hadeli|
